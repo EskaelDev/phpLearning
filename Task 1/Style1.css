@@ -1,0 +1,30 @@
+.module{
+    color: red;
+}
+
+.lectname{
+    font-style: italic;
+}
+
+body{
+    background-color: #1e2a3a;
+    color: #c5e3d5;
+}
+
+.mark-input{
+   width: 45px;
+}
+
+.mark-label{
+    width: 120px;
+    display: inline-block;
+}
+
+.container{
+    margin: auto;
+    padding: 20px;
+    border: thick;
+    border-color: darkgreen;
+    border-style: solid;
+    margin-right: 60%;
+}
