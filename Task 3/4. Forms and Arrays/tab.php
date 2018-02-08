@@ -22,12 +22,12 @@ if (isset($_GET["sun"]))
     $arr["Sunday"] = 7;
 echo '<table border="3"><tr><th>Day</th><th>Presence</th></tr>';
 foreach($arr as $day) {
-    echo '<tr><td>' . $day. '</td>';
+    echo '<tr><td>' . key($arr). '</td>';
+    next($arr);
     if ($day>0)
         echo '<td>X</td></tr>';
     else
         echo '<td> </td></tr>';
-
 }
 /**
  * Created by PhpStorm.
