@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/*Route::get('/', function () {
+    $people = ['Taylor', 'Matt', 'Jeffrey'];
+    return view('welcome', compact('people'));
+});*/
+Route::get('/', 'PagesController@home');
+
+Route::get('/string', function () {
+    return "Hi, you have just changed the routes file";
+});
+
+Route::get('/contact', function () {
+    return view('contact');
 });
