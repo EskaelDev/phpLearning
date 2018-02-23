@@ -3,10 +3,13 @@
 
     <div class="content">
         <div class="title m-b-md">
-            @foreach($people as $person)
-                <li>{{$person}}</li>
-            @endforeach
+            <p>The page title will be {{$title}}</p>
+
+            {{--@foreach($people as $person)--}}
+                {{--<li>{{$person}}</li>--}}
+            {{--@endforeach--}}
         </div>
+        {{$content}}
 
         <div class="links">
             <a href="https://laravel.com/docs">Documentation</a>
