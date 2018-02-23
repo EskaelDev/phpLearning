@@ -24,3 +24,6 @@ Route::get('/string', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/cards', 'CardsController@index');
+
