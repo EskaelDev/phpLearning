@@ -16,11 +16,6 @@
             </div>
         @endforeach
 
-        <div><br/>
-            Title: {{$oneCard->title}}<br/>
-            Created at: {{$oneCard->created_at}}<br/>
-            Updated at: {{$oneCard->updated_at}}<br/>
-        </div>
 
     </div>
 @endsection

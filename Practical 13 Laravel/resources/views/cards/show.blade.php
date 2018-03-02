@@ -10,16 +10,12 @@
             {{--@endforeach--}}
         </div>
         {{--{{$content}}--}}
-        @foreach($cards as $card)
-            <div>
-                {{$card->title}}
-            </div>
-        @endforeach
+
 
         <div><br/>
-            Title: {{$oneCard->title}}<br/>
-            Created at: {{$oneCard->created_at}}<br/>
-            Updated at: {{$oneCard->updated_at}}<br/>
+            Title: {{$card->title}}<br/>
+            Created at: {{$card->created_at}}<br/>
+            Updated at: {{$card->updated_at}}<br/>
         </div>
 
     </div>
