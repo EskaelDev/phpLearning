@@ -16,6 +16,10 @@
             Title: {{$card->title}}<br/>
             Created at: {{$card->created_at}}<br/>
             Updated at: {{$card->updated_at}}<br/>
+            <br/>
+            @foreach($card->note as $note)
+                $note
+                @endforeach
         </div>
 
     </div>
