@@ -17,8 +17,10 @@
             Created at: {{$card->created_at}}<br/>
             Updated at: {{$card->updated_at}}<br/>
             <br/>
-            @foreach($card->note as $note)
-                $note
+            @foreach($card->notes as $note)
+                ID: {{$note->id}}<br/>
+                Card ID: {{$note->card_id}}<br/>
+                Body: {{$note->body}}<br/>
                 @endforeach
         </div>
 
